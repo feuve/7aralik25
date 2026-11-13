@@ -127,7 +127,7 @@ let testMode = false, opened = false, busy = false, cur = null;
 
 /* ---------- Tarih kilidi ---------- */
 const unlockDate = i => new Date(START_DATE.getFullYear(), START_DATE.getMonth(), START_DATE.getDate() + i);
-const isUnlocked = i => testMode || Date.now() >= unlockDate(i).getTime();
+const isUnlocked = i => true;
 const dateStr = i => unlockDate(i).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long' });
 
 /* ---------- Sahne ---------- */
